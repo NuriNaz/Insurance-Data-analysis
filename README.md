@@ -174,7 +174,9 @@ GROUP BY PolicyType;
 ##  How to Use This Project  
 1.  download the .pbit file Open the **`.pbit` file** in Power BI Desktop.  
 2. Use slicers (Policy Number, Claim Number, Customer ID) to filter insights.  
-3. Run the **SQL queries** on your database to validate results.  
+3. Run the **SQL queries** on your database to validate results.
+4. screenshot:https://screenrec.com/share/RzG3OjlSps
+5. screenrecording:https://screenrec.com/share/uVIfWBkgZw
 
 ---
 

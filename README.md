@@ -1,14 +1,14 @@
 # Insurance-Data-analysis
 
-# 📊 Insurance Data Analysis Project – Power BI & SQL
+# Insurance Data Analysis Project – Power BI & SQL
 
-## 📌 Project Overview  
+##  Project Overview  
 This project focuses on analyzing **insurance data** using **Power BI** for visualization and **SQL** for data exploration.  
 The goal was to understand **customer demographics, premiums, claims, and policy performance** while comparing the results between **Power BI dashboards** and **SQL queries**.  
 
 ---
 
-## 📂 Dataset Description  
+## Dataset Description  
 - **Rows:** ~10,004  
 - **Columns:**  
   - `PolicyNumber` – Unique ID for each policy  
@@ -28,7 +28,7 @@ The goal was to understand **customer demographics, premiums, claims, and policy
 
 ---
 
-## 🔎 Data Profiling (Power Query Editor)  
+##  Data Profiling (Power Query Editor)  
 - Checked for **missing values** and nulls in claims.  
 - Verified **data types** (Dates, Numbers, Text).  
 - Removed duplicates in `PolicyNumber` and `CustomerID`.  
@@ -38,7 +38,7 @@ The goal was to understand **customer demographics, premiums, claims, and policy
 
 ---
 
-## 🗂️ Data Modeling  
+##  Data Modeling  
 - **Single table model** (`InsuranceData`).  
 - **DAX Measures** created:  
   - `Total Premium = SUM(PremiumAmount)`  
@@ -48,7 +48,7 @@ The goal was to understand **customer demographics, premiums, claims, and policy
 
 ---
 
-## 📊 Dashboard Highlights (Power BI)  
+##  Dashboard Highlights (Power BI)  
 - **KPIs:**  
   - Total Premium: **5.98M**  
   - Total Coverage: **600.55M**  
@@ -59,10 +59,14 @@ The goal was to understand **customer demographics, premiums, claims, and policy
   - Column Chart → Claims by Status (Rejected, Settled, Pending)  
   - Line Chart → Claim Amount by Age Group  
   - Matrix → Claim distribution by Policy Type  
+   Displayed Claim distribution by Policy Type and Claim Status.
 
+  Enabled Drill-through functionality to navigate from summary-level policy data to individual claim-level details.
+
+  Used dynamic measures to show KPIs contextually during drill-through (e.g., Total Premium, Total Claim).
 ---
 
-## 🖥 SQL Queries for the Same Analysis  
+## SQL Queries for the Same Analysis  
 
 ### 1. **Total Premium, Coverage, and Claim Amount**
 ```sql
@@ -144,7 +148,7 @@ GROUP BY PolicyType;
 
 ---
 
-## 📈 Key Insights  
+## Key Insights  
 - **Gender distribution** is balanced: ~50% Male, 50% Female.  
 - **Travel Insurance** generates the highest premium (~2.5M).  
 - **Claim Status:**  
@@ -159,7 +163,7 @@ GROUP BY PolicyType;
 
 ---
 
-## ✅ Conclusion  
+##  Conclusion  
 - **Travel & Health policies** contribute the maximum revenue.  
 - **Claim rejections** are high → insurers need to improve claim processes.  
 - **Adults** are the highest-risk segment but also bring the most business.  
@@ -167,14 +171,14 @@ GROUP BY PolicyType;
 
 ---
 
-## 🚀 How to Use This Project  
+##  How to Use This Project  
 1.  download the .pbit file Open the **`.pbit` file** in Power BI Desktop.  
 2. Use slicers (Policy Number, Claim Number, Customer ID) to filter insights.  
 3. Run the **SQL queries** on your database to validate results.  
 
 ---
 
-## 🔮 Future Scope  
+## Future Scope  
 - Add **predictive models** for claim forecasting (Python/R with Power BI).  
 - Include **geographical analysis** of policies.  
 - Automate **alerts for claim fraud detection**.  
